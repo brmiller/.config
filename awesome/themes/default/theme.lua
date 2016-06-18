@@ -1,6 +1,7 @@
 ---------------------------
 -- Default awesome theme --
 ---------------------------
+local awful = require("awful")
 
 theme = {}
 
@@ -95,6 +96,39 @@ theme.awesome_icon = "/usr/share/awesome/icons/awesome16.png"
 -- Define the icon theme for application icons. If not set then the icons 
 -- from /usr/share/icons and /usr/share/icons/hicolor will be used.
 theme.icon_theme = nil
+
+-- {{{ Widgets
+theme.widget_disk = awful.util.getdir("config") .. "/themes/default/widgets/disk.png"
+theme.widget_cpu = awful.util.getdir("config") .. "/themes/default/widgets/cpu.png"
+theme.widget_ac = awful.util.getdir("config") .. "/themes/default/widgets/ac.png"
+theme.widget_acblink = awful.util.getdir("config") .. "/themes/default/widgets/acblink.png"
+theme.widget_blank = awful.util.getdir("config") .. "/themes/default/widgets/blank.png"
+theme.widget_batfull = awful.util.getdir("config") .. "/themes/default/widgets/batfull.png"
+theme.widget_batmed = awful.util.getdir("config") .. "/themes/default/widgets/batmed.png"
+theme.widget_batlow = awful.util.getdir("config") .. "/themes/default/widgets/batlow.png"
+theme.widget_batempty = awful.util.getdir("config") .. "/themes/default/widgets/batempty.png"
+theme.widget_vol = awful.util.getdir("config") .. "/themes/default/widgets/vol.png"
+theme.widget_mute = awful.util.getdir("config") .. "/themes/default/widgets/mute.png"
+theme.widget_pac = awful.util.getdir("config") .. "/themes/default/widgets/pac.png"
+theme.widget_pacnew = awful.util.getdir("config") .. "/themes/default/widgets/pacnew.png"
+theme.widget_mail = awful.util.getdir("config") .. "/themes/default/widgets/mail.png"
+theme.widget_mailnew = awful.util.getdir("config") .. "/themes/default/widgets/mailnew.png"
+theme.widget_temp = awful.util.getdir("config") .. "/themes/default/widgets/temp.png"
+theme.widget_tempwarn = awful.util.getdir("config") .. "/themes/default/widgets/tempwarm.png"
+theme.widget_temphot = awful.util.getdir("config") .. "/themes/default/widgets/temphot.png"
+theme.widget_wifi = awful.util.getdir("config") .. "/themes/default/widgets/wifi.png"
+theme.widget_nowifi = awful.util.getdir("config") .. "/themes/default/widgets/nowifi.png"
+theme.widget_mpd = awful.util.getdir("config") .. "/themes/default/widgets/mpd.png"
+theme.widget_play = awful.util.getdir("config") .. "/themes/default/widgets/play.png"
+theme.widget_pause = awful.util.getdir("config") .. "/themes/default/widgets/pause.png"
+theme.widget_ram = awful.util.getdir("config") .. "/themes/default/widgets/ram.png"
+theme.widget_mem = awful.util.getdir("config") .. "/themes/default/tp/ram.png"
+theme.widget_swap = awful.util.getdir("config") .. "/themes/default/tp/swap.png"
+theme.widget_fs = awful.util.getdir("config") .. "/themes/default/tp/fs_01.png"
+theme.widget_fs2 = awful.util.getdir("config") .. "/themes/default/tp/fs_02.png"
+theme.widget_up = awful.util.getdir("config") .. "/themes/default/tp/up.png"
+theme.widget_down = awful.util.getdir("config") .. "/themes/default/tp/down.png"
+-- }}}
 
 return theme
 -- vim: filetype=lua:expandtab:shiftwidth=4:tabstop=8:softtabstop=4:textwidth=80

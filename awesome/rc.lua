@@ -11,11 +11,42 @@ local beautiful = require("beautiful")
 local naughty = require("naughty")
 local menubar = require("menubar")
 
+local vicious = require("vicious")
+
+local wi = require("wi")
+
+
+
 -- Load Debian menu entries
 require("debian.menu")
 
 -- Volume (https://awesome.naquadah.org/wiki/Volume_control_and_display)
 require("volume")
+
+-- Battery widget
+vicious.register(wibox.widget.textbox(), vicious.widgets.bat, function (widget, args)
+        icon = args[1]
+        time = args[3]
+
+        if (tostring(time) == "N/A") then
+            time = ""
+        else
+            time = "("..time..")"
+        end
+
+        return " "..icon.." "..time.." "
+    end, 61, "BAT0")
+
+batwidget = awful.widget.progressbar({ width = 8, vertical = true, background_color = "#494B4F", color = "#AECF96" })
+--batwidget:set_width(8)
+--batwidget:set_vertical(true)
+--batwidget:set_background_color("#494B4F")
+--batwidget:set_border_color("#222222")
+--batwidget:set_color("#AECF96")
+--batwidget:set_gradient_colors({ "#AECF96", "#88A175", "#FF5656" })
+batwidget:set_color({ type = "linear", from = { 0, 0 }, to = { 0, 20 }, stops = { { 0, "#AECF96" }, { 0.5, "#88A175" }, { 1, "#FF5656" } }})
+vicious.register(batwidget, vicious.widgets.bat, "$2", 61, "BAT0")
+
 
 -- {{{ Error handling
 -- Check if awesome encountered an error during startup and fell back to
@@ -200,6 +231,9 @@ for s = 1, screen.count() do
     if s == 1 then 
         right_layout:add(wibox.widget.systray())
         right_layout:add(volume_widget)
+        right_layout:add(batwidget)
+        right_layout:add(baticon)
+        right_layout:add(batpct)
     end
     right_layout:add(mytextclock)
     right_layout:add(mylayoutbox[s])
