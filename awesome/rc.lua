@@ -148,7 +148,19 @@ menubar.utils.terminal = terminal -- Set the terminal for applications that requ
 
 -- {{{ Wibox
 -- Create a textclock widget
-mytextclock = awful.widget.textclock()
+mytextclock = awful.widget.textclock(" %a %b %d, %I:%M %P ")
+-- inline calendar popup a la delightful.widgets.datetime (credit Bzed)
+local calendar2 = require('calendar2')
+calendar2.addCalendarToWidget(mytextclock,
+                (beautiful.fg_focus and beautiful.bg_focus)
+                and
+                        string.format(
+                                        '<span color="%s" background="%s">%%s</span>',
+                                        beautiful.fg_focus,
+                                        beautiful.bg_focus)
+                or
+                        '%s')
+
 
 -- Create a wibox for each screen and add it
 mywibox = {}
