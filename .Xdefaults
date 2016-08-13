@@ -1,0 +1,1216 @@
+!! drop in Solarized colorscheme for Xresources/Xdefaults
+
+!!SOLARIZED HEX     16/8 TERMCOL  XTERM/HEX   L*A*B      RGB         HSB
+!!--------- ------- ---- -------  ----------- ---------- ----------- -----------
+!!base03    #002b36  8/4 brblack  234 #1c1c1c 15 -12 -12   0  43  54 193 100  21
+!!base02    #073642  0/4 black    235 #262626 20 -12 -12   7  54  66 192  90  26
+!!base01    #586e75 10/7 brgreen  240 #585858 45 -07 -07  88 110 117 194  25  46
+!!base00    #657b83 11/7 bryellow 241 #626262 50 -07 -07 101 123 131 195  23  51
+!!base0     #839496 12/6 brblue   244 #808080 60 -06 -03 131 148 150 186  13  59
+!!base1     #93a1a1 14/4 brcyan   245 #8a8a8a 65 -05 -02 147 161 161 180   9  63
+!!base2     #eee8d5  7/7 white    254 #e4e4e4 92 -00  10 238 232 213  44  11  93
+!!base3     #fdf6e3 15/7 brwhite  230 #ffffd7 97  00  10 253 246 227  44  10  99
+!!yellow    #b58900  3/3 yellow   136 #af8700 60  10  65 181 137   0  45 100  71
+!!orange    #cb4b16  9/3 brred    166 #d75f00 50  50  55 203  75  22  18  89  80
+!!red       #dc322f  1/1 red      160 #d70000 50  65  45 220  50  47   1  79  86
+!!magenta   #d33682  5/5 magenta  125 #af005f 50  65 -05 211  54 130 331  74  83
+!!violet    #6c71c4 13/5 brmagenta 61 #5f5faf 50  15 -45 108 113 196 237  45  77
+!!blue      #268bd2  4/4 blue      33 #0087ff 55 -10 -45  38 139 210 205  82  82
+!!cyan      #2aa198  6/6 cyan      37 #00afaf 60 -35 -05  42 161 152 175  74  63
+!!green     #859900  2/2 green     64 #5f8700 60 -20  65 133 153   0  68 100  60
+
+#define S_base03        #002b36
+#define S_base02        #073642
+#define S_base01        #586e75
+#define S_base00        #657b83
+#define S_base0         #839496
+#define S_base1         #93a1a1
+#define S_base2         #eee8d5
+#define S_base3         #fdf6e3
+#define S_yellow        #b58900
+#define S_orange        #cb4b16
+#define S_red           #dc322f
+#define S_magenta       #d33682
+#define S_violet        #6c71c4
+#define S_blue          #268bd2
+#define S_cyan          #2aa198
+#define S_green         #859900
+
+*background:            S_base03
+*foreground:            S_base00
+*fading:                40
+*fadeColor:             S_base03
+*cursorColor:           S_base1
+*pointerColorBackground:S_base01
+*pointerColorForeground:S_base1
+
+!! black dark/light
+*color0:                S_base02
+*color8:                S_base03
+
+!! red dark/light
+*color1:                S_red
+*color9:                S_orange
+
+!! green dark/light
+*color2:                S_green
+*color10:               S_base01
+
+!! yellow dark/light
+*color3:                S_yellow
+*color11:               S_base00
+
+!! blue dark/light
+*color4:                S_blue
+*color12:               S_base0
+
+!! magenta dark/light
+*color5:                S_magenta
+*color13:               S_violet
+
+!! cyan dark/light
+*color6:                S_cyan
+*color14:               S_base1
+
+!! white dark/light
+*color7:                S_base2
+*color15:               S_base3
+
+
+
+Xft.dpi: 96
+
+Netscape*documentFonts.sizeIncrement: 5
+
+Gbuffy*font: -misc-fixed-medium-r-normal--14-130-75-75-c-70-iso8859-1
+
+Vim.background: black
+Vim.foreground: white
+Gvim.background: black
+Gvim.foreground: white
+
+urxvt*depth: 32
+urxvt*background: rgba:0000/0000/0000/0000
+
+yeahconsole*term: urxvt
+yeahconsole*xOffset: 244
+yeahconsole*screenWidth: 1036
+yeahconsole*keyBigger: ControlAlt+z
+yeahconsole*keySmaller: ControlAlt+a
+yeahconsole*inheritPixmap: true
+yeahconsole*tintColor: white
+yeahconsole*shading: 50
+
+aterm*geometry: 80x20
+aterm*background: black
+aterm*foreground: white
+aterm*transparent: true
+aterm*shading: 90
+aterm*transpscrollbar: true
+aterm*fading: 80
+aterm*pointerColor: red
+aterm*marginBell: true
+aterm*visualBell: true
+aterm*scrollBar: true
+aterm*scrollBar_right: true
+aterm*saveLines: 2000
+! fixed is 6x13
+aterm*font: fixed
+aterm*font1: 5x8
+! 6x10 has problems
+aterm*font2: 6x9
+aterm*font3: 8x16
+aterm*font4: 10x20
+
+Rxvt*geometry: 80x20
+Rxvt*background: black
+Rxvt*foreground: white
+Rxvt*pointerColor: red
+Rxvt*marginBell: true
+Rxvt*visualBell: true
+Rxvt*scrollBar: true
+Rxvt*scrollBar_right: true
+Rxvt*saveLines: 4000
+Rxvt*path: /export/home/brmiller/stuff/pixmaps
+! fixed is 6x13
+Rxvt*font: fixed
+Rxvt*font1: 5x8
+! 6x10 has problems
+Rxvt*font2: 6x9
+Rxvt*font3: 8x16
+Rxvt*font4: 10x20
+!Rxvt*bigfont_key: F12
+!Rxvt*smallfont_key: F11
+Rxvt*meta8: false
+Rxvt*transparent: true
+Rxvt*shading: 30
+Rxvt*transpscrollbar: true
+Rxvt*fading: 50
+
+URxvt*geometry: 80x20
+URxvt*background: black
+URxvt*foreground: white
+URxvt*pointerColor: red
+URxvt*marginBell: true
+URxvt*visualBell: true
+URxvt*scrollBar: true
+URxvt*scrollBar_right: true
+URxvt*saveLines: 4000
+URxvt*path: /export/home/brmiller/stuff/pixmaps
+! fixed is 6x13
+!URxvt*font: fixed
+URxvt*font: xft:LiberationMono:size=12
+URxvt*font1: 5x8
+! 6x10 has problems
+URxvt*font2: 6x9
+URxvt*font3: 8x16
+URxvt*font4: 10x20
+!URxvt*bigfont_key: F12
+!URxvt*smallfont_key: F11
+URxvt*meta8: false
+URxvt.perl-lib: /home/brmiller/.urxvt-perls
+URxvt.perl-ext-common: default,url-select,keyboard-select,clipboard
+!URxvt.clipboard.copycmd: xsel -ip
+!URxvt.clipboard.pastecmd: xsel -op
+URxvt.clipboard.autocopy: true           
+URxvt.clipboard.copycmd:  xclip -i -selection clipboard
+URxvt.clipboard.pastecmd: xclip -o -selection clipboard 
+URxvt.keysym.M-u:      perl:url-select:select_next
+URxvt.keysym.M-Escape: perl:keyboard-select:activate
+URxvt.keysym.M-c:      perl:clipboard:copy
+URxvt.keysym.M-p:      perl:clipboard:paste
+URxvt.keysym.M-C-v:    perl:clipboard:paste_escaped
+!URxvt.url-select.underline: true
+!URxvt.url-select.launcher: chromium-browser
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Sample configuration for mrxvt since to 0.3.0
+! To use, copy it to ~/.mrxvtrc (from 0.3.9) or ~/.Xdefaults
+! Features:
+!    . transparent background (override background image)
+!    . background image (when no transparent background)
+!    . three initial tabs
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+mrxvt*vt0*tabTitle:			term1
+mrxvt*vt1*tabTitle:			term2
+mrxvt*vt2*tabTitle:			term3
+mrxvt*vt0*saveLines:		600
+mrxvt*vt1*saveLines:		600
+mrxvt*vt2*saveLines:		600
+!mrxvt*vt0*Pixmap:			/home/jimmy/images/vt0bg.jpg
+!mrxvt*vt1*Pixmap:			/home/jimmy/images/vt1bg.png
+!mrxvt*vt2*Pixmap:			/home/jimmy/images/vt2bg.xpm
+!mrxvt*vt0*command:			/bin/tcsh
+!mrxvt*vt1*command:			/bin/bash
+!mrxvt*vt2*command:			/bin/bash -c "telnet www.mitbbs.com"
+!mrxvt*tabShell:			True
+!mrxvt*cmdInitTabs:			True
+!mrxvt*cmdAllTabs:			True
+mrxvt*initTermNumber:		1
+
+mrxvt*font: fixed
+mrxvt*font1: 5x8
+! 6x10 has problems
+mrxvt*font2: 6x9
+mrxvt*font3: 8x16
+mrxvt*font4: 10x20
+
+mrxvt*protectSecondary:		True
+mrxvt*loginShell:			True
+
+mrxvt*scrollbarStyle:		next
+!mrxvt*scrollbarPixmap:		/home/jimmy/images/scrollbarbg.jpg
+
+!mrxvt*opacity:				75
+!mrxvt*opacityDegree:		5
+mrxvt*transparent:			true
+mrxvt*transparentScrollbar:	true
+mrxvt*transparentTabbar:	true
+mrxvt*transparentMenubar:	true
+mrxvt*foreground:			white
+mrxvt*background:			black
+!mrxvt*ufBackground:		yellow
+mrxvt*backgroundFade:		50
+mrxvt*fading:				50
+mrxvt*shading:				80
+!mrxvt*tintColor:			red
+!mrxvt*textShadow:			red
+!mrxvt*textShadowMode:		botright
+
+!	Text color of active tab
+mrxvt*tabForeground:		white
+!	Background color of active tab
+!mrxvt*tabBackground:		yellow
+!	Foreground color of inactive tab
+mrxvt*itabForeground:		gray
+!	Background color of inactive tab
+!mrxvt*itabBackground:		gray
+!mrxvt*tabbarPixmap:		/home/jimmy/images/tabbarbg.png
+!	Use tabbar background as tab background?
+!mrxvt*tabPixmap:			true
+!mrxvt*syncTabTitle:		true
+!mrxvt*syncTabIcon:			true
+!mrxvt*nonBoldFont:			true
+!mrxvt*hideTabbar:			true
+!mrxvt*bottomTabbar:		true
+!mrxvt*hideButtons:			true
+!mrxvt*windowsSwitch:		true
+
+!mrxvt*menu:				/home/jimmy/doc/menu/rxvt.menu
+!mrxvt*showMenu:			False
+!mrxvt*menubarPixmap:		/home/jimmy/images/menubarbg.xpm
+
+!mrxvt*xft:					True
+!mrxvt*xftFont:				Luxi Mono
+!mrxvt*xftmFont:			SimSun
+!mrxvt*xftNomFont:			True
+!mrxvt*xftAntialias:		True
+!mrxvt*xftWeight:			Medium
+!mrxvt*xftSlant:			Roman
+!mrxvt*xftHinting:			True
+!mrxvt*xftAutoHint:			True
+!mrxvt*xftAntialias:		True
+!mrxvt*xftWeight:			Medium
+!mrxvt*xftSlant:			Roman
+!mrxvt*xftHinting:			True
+!mrxvt*xftAutoHint:			True
+!mrxvt*xftGlobalAdvance:	True
+!mrxvt*xftWidth:			normal
+!mrxvt*xftRGBA:				rgb
+!mrxvt*xftSize:				14
+
+!mrxvt*cursorBlink:			True
+!mrxvt*cursorBlinkInterval:	500
+
+mrxvt*geometry:				80x30
+!mrxvt*lineSpace:			2
+mrxvt*borderLess:			True
+!mrxvt*overrideRedirect:	True
+!mrxvt*bellCommand:			ls
+!mrxvt*holdExit:			False
+!Mrxvt*holdExitText:		Terminal exited!
+
+!mrxvt*internalBorder:		2
+!mrxvt*externalBorder:		2
+
+!mrxvt*thai:				False
+!mrxvt*multichar_encoding:	GB
+!mrxvt*inputMethod:			SCIM
+
+!mrxvt*hotkey*Dummy:		Ctrl+Meta+t
+mrxvt*hotkey*NewTab:		Ctrl+Meta+n
+! This key is compatible with Windows
+mrxvt*hotkey*NextTab:		Ctrl+Tab
+! These keys are used by emacs, disable them
+!mrxvt*hotkey*Dummy:			Ctrl+Shift+underscore
+!mrxvt*hotkey*Dummy:			Ctrl+Shift+plus
+
+!mrxvt*sessionMgt:			true
+mrxvt*confFileSave:			~/.mrxvtrc.save
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Sample configuration for mrxvt prior to 0.2.0
+! To use, copy it to ~/.Xdefaults
+! Features:
+!    . transparent background,
+!    . three initial tabs
+!    . each tab has a different tinting color
+!    . initial 7x14 font
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+materm*termName:        rxvt
+!	Works for non-transparent window
+!materm*vt0*Pixmap:      /home/jimmy/test.png
+!materm*vt1*Pixmap:      /home/jimmy/test1.png
+materm*vt0*Title:       term0
+materm*vt1*Title:       term1
+materm*vt2*Title:       term2
+materm*vt3*Title:       term3
+materm*vt4*Title:       term4
+materm*vt5*Title:       term5
+materm*vt6*Title:       term6
+materm*vt7*Title:       term7
+materm*vt8*Title:       term8
+materm*vt9*Title:       term9
+materm*vt10*Title:      term10
+materm*vt11*Title:      term11
+materm*vt12*Title:      term12
+materm*vt13*Title:      term13
+materm*vt14*Title:      term14
+materm*vt15*Title:      term15
+materm*vt0*Tinting:		yellow
+materm*vt1*Tinting:		red
+materm*vt2*Tinting:		green
+materm*vt3*Tinting:		blue
+materm*vt4*Tinting:		brown
+materm*vt5*Tinting:		grey
+materm*foreground:      white
+materm*background:      black
+materm*transparent:     True
+materm*transpscrollbar: False
+materm*geometry:        80x40
+materm*saveLines:       600
+materm*scrollBar:       True
+!	Works for non-transparent window
+!materm*fading:          70
+!materm*font:            -misc-fixed-medium-r-normal--14-130-75-75-c-70-iso8859-1
+materm*font:            fixed
+materm*loginShell:      True
+materm*NbTerm:          1
+
+ssh*geometry: 80x20
+ssh*background: black
+ssh*foreground: white
+ssh*transparent: true
+ssh*shading: 70
+ssh*transpscrollbar: true
+ssh*fading: 50
+ssh*pointerColor: red
+ssh*marginBell: true
+ssh*visualBell: true
+ssh*scrollBar: true
+ssh*scrollBar_right: true
+ssh*saveLines: 2000
+! fixed is 6x13
+ssh*font: fixed
+ssh*font1: 5x8
+! 6x10 has problems
+ssh*font2: 6x9
+ssh*font3: 8x16
+ssh*font4: 10x20
+
+irssi*geometry: 120x20
+
+cobalt*geometry: 80x20
+cobalt*background: black
+cobalt*foreground: white
+cobalt*transparent: true
+cobalt*shading: 70
+cobalt*transpscrollbar: true
+cobalt*fading: 50
+cobalt*pointerColor: red
+cobalt*marginBell: true
+cobalt*visualBell: true
+cobalt*scrollBar: true
+cobalt*scrollBar_right: true
+cobalt*saveLines: 2000
+! fixed is 6x13
+cobalt*font: fixed
+cobalt*font1: 5x8
+! 6x10 has problems
+cobalt*font2: 6x9
+cobalt*font3: 8x16
+cobalt*font4: 10x20
+
+icecube*geometry: 80x20
+icecube*background: black
+icecube*foreground: white
+icecube*transparent: true
+icecube*shading: 70
+icecube*transpscrollbar: true
+icecube*fading: 50
+icecube*pointerColor: red
+icecube*marginBell: true
+icecube*visualBell: true
+icecube*scrollBar: true
+icecube*scrollBar_right: true
+icecube*saveLines: 2000
+! fixed is 6x13
+icecube*font: fixed
+icecube*font1: 5x8
+! 6x10 has problems
+icecube*font2: 6x9
+icecube*font3: 8x16
+icecube*font4: 10x20
+
+Console*geometry: 80x4-1-1
+Console*background: #82c4a
+Console*foreground: white
+Console*transparent: true
+Console*shading: 90
+Console*transpscrollbar: true
+Console*fading: 80
+Console*pointerColor: white
+Console*marginBell: true
+Console*visualBell: true
+Console*scrollBar: true
+Console*saveLines: 1000
+Console*scrollColor: #42a2c
+Consle*troughColor:  #21a2c
+Console*scrollBar_floating: true
+Console*inheritPixmap: true
+!Console*backgroundPixmap: n039.xpm
+!Console*backgroundPixmap: egtowel.xpm
+Console*font: fixed
+Console*font1: 5x8
+! 6x10 has problems
+Console*font2: 6x9
+Console*font3: 7x14
+Console*font4: 10x20
+
+exchangemail*geometry: 54x6+1780-1
+exchangemail*background: grey
+exchangemail*foreground: white
+exchangemail*inheritPixmap: true
+!exchangemail*backgroundPixmap: /export/home/brmiller/stuff/pixmaps/egtowel.xpm
+exchangemail*pointerColor: white
+exchangemail*marginBell: true
+exchangemail*visualBell: true
+exchangemail*scrollBar: true
+exchangemail*scrollColor: #343e44
+exchangemail*saveLines: 100
+exchangemail*font: 5x8
+exchangemail*font1: 6x9
+exchangemail*font2: 6x13
+exchangemail*font3: 7x14
+exchangemail*font4: 10x20
+
+tcpdump*geometry: 80x10+1+840
+tcpdump*background: grey
+tcpdump*foreground: white
+tcpdump*backgroundPixmap: /export/home/brmiller/stuff/pixmaps/robsblue2.xpm
+tcpdump*pointerColor: white
+tcpdump*marginBell: true
+tcpdump*visualBell: true
+tcpdump*scrollBar: true
+tcpdump*scrollColor: #2c3d4d
+tcpdump*saveLines: 100
+tcpdump*font: 5x8
+tcpdump*font1: 6x9
+tcpdump*font2: 6x13
+tcpdump*font3: 7x14
+tcpdump*font4: 10x20
+
+syslog*geometry: 120x6+1900-1
+syslog*background: #82c4a
+!syslog*foreground: white
+!syslog*backgroundPixmap: /export/home/brmiller/stuff/pixmaps/n039.xpm
+!syslog*backgroundPixmap: /export/home/brmiller/stuff/pixmaps/egtowel.xpm
+syslog*transparent: true
+syslog*scrollColor: #42a2c
+syslog*troughColor: #21a1c
+syslog*inheritPixmap: true
+syslog*pointerColor: white
+syslog*marginBell: true
+syslog*visualBell: true
+syslog*scrollBar: true
+syslog*scrollBar_right: true
+syslog*scrollBar_floating: true
+syslog*saveLines: 400
+syslog*font: 5x8
+syslog*font1: 6x9
+syslog*font2: 6x13
+syslog*font3: 7x14
+syslog*font4: 10x20
+
+!test*geometry: 50x4+502-1
+test*background: #82c4a
+test*foreground: white
+test*pointerColor: white
+test*marginBell: true
+test*visualBell: true
+test*scrollBar: true
+test*saveLines: 1500
+test*font: fixed
+test*font1: 5x7
+! 6x10 has problems
+test*font2: 5x8
+test*font3: 7x14
+test*font4: 10x20
+
+Landshark*geometry: 80x20-2+30
+Landshark*background: black
+Landshark*foreground: white
+Landshark*cursorColor: white
+Landshark*mouseColor: #82c4a
+Landshark*transparent: true
+Landshark*shading: 60
+Landshark*transpscrollbar: true
+Landshark*visualBell: true
+Landshark*scrollBar: true
+Landshark*scrollBar_right: true
+Landshark*saveLines: 2000
+Landshark*title: Landshark
+Landshark*iconName: Landshark
+! fixed is 6x13
+Landshark*font: fixed
+Landshark*font1: 5x8
+! 6x10 has problems
+Landshark*font2: 6x9
+Landshark*font3: 8x16
+Landshark*font4: 10x20
+
+Dori*geometry: 80x40-2+324
+Dori*background: black
+Dori*foreground: white
+Dori*cursorColor: white
+Dori*mouseColor: #82c4a
+Dori*transparent: true
+Dori*shading: 60
+Dori*transpscrollbar: true
+Dori*visualBell: true
+Dori*scrollBar: true
+Dori*scrollBar_right: true
+Dori*saveLines: 2000
+Dori*title: Dori
+Dori*iconName: Dori
+Dori*font: fixed
+Dori*font1: 5x8
+Dori*font2: 6x9
+Dori*font3: 7x14
+Dori*font4: 10x20
+
+Mail*title: Mail
+Mail*iconName: Mail
+Mail*geometry: 120x40+1320+370
+Mail*background: black
+Mail*foreground: white
+Mail*pointerColor: white
+Mail*cursorColor: white
+Mail*marginBell: true
+Mail*visualBell: true
+Mail*scrollBar: false
+Mail*inheritPixmap: false
+Mail*font: fixed
+Mail*font1: 6x9
+Mail*font2: 6x13
+Mail*font3: 7x14
+Mail*font4: 10x20
+Mail*bellIsUrgent: true
+Mail*urgentOnBell: true
+
+xenon*geometry: 80x20
+xenon*background: #82c4a
+xenon*foreground: white
+xenon*pointerColor: red
+xenon*marginBell: true
+xenon*visualBell: true
+xenon*scrollBar: true
+xenon*scrollBar_right: true
+xenon*saveLines: 2000
+xenon*path: /export/home/brmiller/stuff/pixmaps
+xenon*title: xenon
+xenon*iconName: xenon
+! fixed is 6x13
+xenon*font: fixed
+xenon*font1: 5x8
+! 6x10 has problems
+xenon*font2: 6x9
+xenon*font3: 7x14
+xenon*font4: 10x20
+
+lx*title: lx
+lx*iconName: lx
+lx*geometry: 120x40+1320+370
+lx*background: #41a14
+lx*foreground: white
+lx*pointerColor: white
+lx*cursorColor: white
+lx*marginBell: true
+lx*visualBell: true
+lx*scrollBar: false
+lx*inheritPixmap: true
+lx*font: fixed
+lx*font1: 6x9
+lx*font2: 6x13
+lx*font3: 7x14
+lx*font4: 10x20
+
+gw*geometry: 80x25
+gw*background: black
+gw*foreground: white
+gw*pointerColor: red
+gw*marginBell: true
+gw*visualBell: true
+gw*scrollBar: true
+gw*scrollBar_right: true
+gw*saveLines: 2000
+gw*path: /export/home/brmiller/stuff/pixmaps
+! fixed is 6x13
+gw*font: fixed
+gw*font1: 5x8
+! 6x10 has problems
+gw*font2: 6x9
+gw*font3: 8x16
+gw*font4: 10x20
+
+millerb*geometry: 80x25
+!millerb*background: #286782
+millerb*background: black
+millerb*foreground: white
+millerb*cursorColor: white
+millerb*mouseColor: red
+millerb*visualBell: true
+millerb*scrollBar: false
+millerb*title: millerb
+millerb*iconName: millerb
+
+ascend*background: #286782
+ascend*foreground: white
+ascend*cursorColor: white
+ascend*mouseColor: red
+ascend*geometry: 80x25
+ascend*visualBell: true
+ascend*scrollBar: false
+ascend*title: ascend
+ascend*iconName: ascend
+
+carbon*background: #286782
+carbon*foreground: white
+carbon*cursorColor: white
+carbon*mouseColor: red
+carbon*geometry: 80x25
+carbon*visualBell: true
+carbon*scrollBar: true
+carbon*title: carbon
+carbon*iconName: carbon
+
+helium*background: #484848
+helium*foreground: white
+helium*cursorColor: white
+helium*mouseColor: red
+helium*visualBell: true
+helium*scrollBar: true
+helium*saveLines: 2000
+helium*title: helium
+helium*iconName: helium
+
+seanic*geometry: 80x30
+seanic*background: black
+!seanic*backgroundPixmap: n039.xpm:1
+seanic*foreground: white
+seanic*cursorColor: white
+seanic*mouseColor: #82c4a
+seanic*visualBell: true
+seanic*scrollBar: true
+seanic*saveLines: 2000
+seanic*title: iguana.seanic.net
+seanic*iconName: seanic
+seanic*font: fixed
+
+xterm*background: #82c4a
+xterm*foreground: white
+xterm*cursorColor:   white
+xterm*visualBell: true
+xterm*beNiceToColormap:  false
+XTerm*beNiceToColormap:  false
+xdock*beNiceToColormap:  false
+
+MXTerm*background: black
+MXTerm*foreground: white
+MXTerm*cursorColor: white
+MXTerm*scrollbar*background: black
+
+ardfa*background: black
+ardfa*foreground: white
+ardfa*cursorColor: white
+ardfa*scrollbar*background: black
+
+xhtalk.geometry: 130x15+2+750
+xhtalk.idleOneColor: #43a0a5
+xhtalk.idleTwoColor: #2e8b90
+xhtalk.idleThreeColor: #137075
+xhtalk.timeout: 10
+
+xv*visual: truecolor
+xv*force24: true
+
+xmag*beNiceToColormap: false
+xdvi*beNiceToColormap: false
+xfig*beNiceToColormap: false
+xfontsel*beNiceToColormap: false
+xlatex*beNiceToColormap: false
+xcoloredit*beNiceToColormap: false
+xcolorsel*beNiceToColormap: false
+Xarchie*beNiceToColormap: false
+Bitmap*beNiceToColormap: false
+
+Xarchie*background:	dark slate gray
+Xarchie*foreground:	yellow
+
+xdaliclock.wm_option.title:	off
+xdaliclock.geometry: +500+1000
+xdaliclock.shape: true
+xdaliclock.seconds: false
+!xdaliclock.foreground: #43b0a5
+xdaliclock.foreground: white
+xdaliclock.font: -*-new century schoolbook-*-*-*-*-24-*-*-*-*-*-*-*
+
+!! XCalc
+!xcalc.hp.bevel.background: #111111
+!xcalc.hp.bevel.screen.background: #00000
+!xcalc.hp.bevel.screen.DEG.foreground: LightSeaGreen
+!xcalc.hp.bevel.screen.RAD.background: #00000
+!xcalc.hp.bevel.screen.RAD.foreground: #LightSeaGreen
+!xcalc.hp.bevel.screen.GRAD.background: #00000
+!xcalc.hp.bevel.screen.GRAD.foreground: LightSeaGreen
+!xcalc.hp.bevel.screen.RAD.foreground: LightSeaGreen
+!xcalc.hp.bevel.screen.INV.background: #00000
+!xcalc.hp.bevel.screen.INV.foreground: Red
+!xcalc.hp.bevel.screen.LCD.background: #000000
+!xcalc.hp.bevel.screen.LCD.foreground: LightSeaGreen
+!xcalc.hp.bevel.screen.LCD.shadowWidth: 0
+!xcalc.hp.bevel.screen.M.background: #00000
+!xcalc.hp.bevel.screen.M.foreground: LightSeaGreen
+!xcalc.hp.bevel.screen.P.background: #00000
+!xcalc.hp.bevel.screen.P.foreground: Yellow
+!xcalc.hp.bevel.screen.LCD.background: #00000
+!xcalc.hp.bevel.screen.DEG.background: #00000
+!xcalc.hp.background: #333333
+!xcalc.hp.Command.foreground: White
+!xcalc.hp.Command.background: #777777
+!xcalc.hp.button5.background: Orange3
+!xcalc.hp.button20.background: #222222
+!xcalc.hp.button25.background: #222222
+!xcalc.hp.button30.background: #222222
+!xcalc.hp.button35.background: #222222
+!xcalc.hp.button40.background: #222222
+!xcalc.hp.button22.background: #333333
+!xcalc.hp.button23.background: #333333
+!xcalc.hp.button24.background: #333333
+!xcalc.hp.button27.background: #333333
+!xcalc.hp.button28.background: #333333
+!xcalc.hp.button29.background: #333333
+!xcalc.hp.button32.background: #333333
+!xcalc.hp.button33.background: #333333
+!xcalc.hp.button34.background: #333333
+!xcalc.hp.button37.background: #333333
+!xcalc.hp.button38.background: #333333
+!xcalc.hp.button39.background: #333333
+
+
+! Generic XLoad widget class resources
+!
+! xload uses a tricky resource handling mechanism that utilizes its widget
+! heirarchy.  Widget heirarchy from the manpage:
+!
+!    XLoad  xload
+!       Paned  paned
+!          Label  label
+!          StripChart  load
+!
+! _08 Jun 98 BKM
+!
+XLoad*geometry: 9500x56+148-1
+XLoad*label.background: #82c4a
+XLoad*label.foreground: white
+XLoad*load.background: #82c4a
+XLoad*load.foreground: white
+XLoad*load.highlight: #949aac
+XLoad*load.jumpscroll: 1
+
+XLoadtime*geometry: 850x56+300-1
+XLoadtime*background: #82c4a
+XLoadtime*foreground: white
+!XLoadtime*Label.background: #82c4a
+!XLoadtime*Label.foreground: white
+XLoadtime*Label.justify:   left
+!XLoadtime*load.background: #82c4a
+!XLoadtime*load.foreground: white
+XLoadtime*12Hour:     		True
+XLoadtime*Update:     		5
+XLoadtime*Font:    			-misc-fixed-bold-r-normal--*-120-*-*-c-*-iso8859-1
+Xloadtime*Clock:      		true
+Xloadtime*Hostname:   		true
+XLoadtime*Cpu: 		 		true
+XLoadtime*input:        	false
+XLoadtime*JumpScroll:      1
+XLoadtime*internalBorderWidth: 0
+XLoadtime*showGrip:        false
+XLoadtime*showLabel:  		true
+
+
+! xload-xpm resources
+!
+! _08 Jun 98 BKM
+!
+! I decided I didn't wan't the hostname label
+xload-xpm*showLabel:  false
+! This is usually required for Xaw-Xpm
+xload-xpm*beNiceToColormap:  false
+! Do not want the 3D look
+xload-xpm*shadowWidth: 0
+! Use the same background as the root window
+xload-xpm*pixmapName: /export/home/brmiller/stuff/pixmaps/n039.xpm
+
+
+!
+!  xosview resources (override into your .Xdefaults file)
+!  $Id: Xdefaults,v 1.20 1998/03/27 19:18:45 bgrayson Exp $
+
+! General Resources
+
+! xosview*title:
+!xosview*geometry:         140x118+1+1  
+! xosview*display:
+XOsview*labels: true
+xosview*meterLabelColor:  white
+xosview*usedlabels:       true
+xosview*usedLabelColor:   orange
+xosview*borderwidth:      0
+xosview*font:             6x9
+xosview*background:       #82c4a
+xosview*foreground:       white
+xosview*enableStipple:	  false !  Change to true to try beta stipple support.
+xosview*samplesPerSec:    10    !  This resource is not yet supported.
+
+
+! Load Meter Resources
+
+xosview*load: false
+!  We do not need to enable the Decay option for the load -- the load
+!    is already a time-averaged value!
+xosview*loadWarnColor:    orange
+xosview*loadProcColor:    seagreen
+xosview*loadIdleColor:    aquamarine
+xosview*loadPriority:     50
+xosview*loadAlarmThreshold: 2
+xosview*loadDecay: false
+xosview*loadUsedFormat:	  float
+
+! CPU Meter Resources
+
+xosview*cpu: true
+xosview*cpuUserColor:       seagreen
+xosview*cpuNiceColor:       yellow
+xosview*cpuSystemColor:     orange
+xosview*cpuInterruptColor : red
+xosview*cpuFreeColor:       aquamarine
+xosview*cpuPriority:        1
+xosview*cpuDecay:           true
+xosview*cpuUsedFormat:	    percent
+
+! Memory Meter Resources
+!  Not all of these are used by a specific platform.
+
+xosview*mem: true
+xosview*memUsedColor:     seagreen
+xosview*memSharedColor:   SkyBlue
+xosview*memBufferColor:   orange
+xosview*memCacheColor:    red
+xosview*memFreeColor:     aquamarine
+xosview*memTextColor:     blue
+xosview*memOtherColor:    orange
+xosview*memActiveColor:	  blue
+xosview*memInactiveColor: lightblue
+xosview*memPriority:      10
+xosview*memDecay:         false
+xosview*memUsedFormat:	  autoscale
+
+! Swap Meter Resources
+
+xosview*swap: true
+xosview*swapUsedColor:    seagreen
+xosview*swapFreeColor:    aquamarine
+xosview*swapPriority:     10
+xosview*swapDecay:        false
+xosview*swapUsedFormat:	  autoscale
+
+
+! Page Meter Resources
+
+xosview*page:           false
+xosview*pageBandwidth:  120
+xosview*pageInColor:    SkyBlue
+xosview*pageOutColor:   SlateBlue1
+xosview*pageIdleColor:  #82c4a
+xosview*pagePriority:   5
+xosview*pageDecay:      false
+xosview*pageUsedFormat: autoscale
+
+
+! Network Meter Resources
+
+!xosview*net:		false
+!  Suitable for people with 28.8Kbaud with no compression, or 14.4
+!    with compression:
+!xosview*netBandwidth: 2000
+!  Suitable for people with up to 57.6Kbaud modems:
+!xosview*netBandwidth: 5000
+!  Suitable for people with 10Mbits/sec Ethernet:  (could put 1250000)
+!xosview*netBandwidth: 1000000
+!  Suitable for people with 100Mbits/sec Ethernet (could be 12500000)
+!xosview*netBandwidth: 10000000
+!xosview*netInColor:       SkyBlue
+!xosview*netOutColor:      SlateBlue1
+!xosview*netBackground:    aquamarine
+!xosview*netPriority:      2
+!xosview*netDecay:         true
+!xosview*netUsedFormat:	  autoscale
+
+!!!
+!!!  Linux-only meters
+!!!
+! Serial Meter Resources
+! set 'true' for autodetection or give the baseaddress
+!   (autodetection may fail sometimes, if
+!    the port is locked by ppp/slip for example)
+
+!xosview*serial0: 0x3f8
+!xosview*serial1: 0x2f8
+!xosview*serial2: 0x3e8
+!xosview*serial3: 0x2e8
+!xosview*serial0: false
+!xosview*serial1: false
+!xosview*serial2: false
+!xosview*serial3: false
+!xosview*serial4: false
+!xosview*serial5: false
+!xosview*serial6: false
+!xosview*serial7: false
+!xosview*serial8: false
+!xosview*serial9: false
+!xosview*serialOnColor:    red
+!xosview*serialOffColor:   #82c4a
+!xosview*serialPriority:   1
+
+! Interrupt Meter Resources
+
+xosview*interrupts:       true
+xosview*intOnColor:       red
+xosview*intOffColor:      #82c4a
+
+! Battery meter
+!xosview*battery:          false
+!xosview*batteryLeftColor: orange
+!xosview*batteryUsedColor: #82c4a
+!xosview*batteryPriority:  50
+!xosview*batteryUsedFormat: percent
+
+
+
+!tkppp*background: #204070
+!tkppp*foreground: white
+!tkppp*activeBackground: #305080
+!tkppp*activeForeground: white
+!tkppp*Frame.background: #204070
+!tkppp*Entry.background: #305080
+!tkppp*Entry.foreground: white
+!tkppp*Label.background: #204070
+!tkppp*Label.foreground: white
+!tkppp*Menu.background: #305080
+!tkppp*Menu.foreground: white
+!tkppp*Menubutton.background: #406090
+!tkppp*Menubutton.foreground: white
+
+tkppp*background: #204070
+tkppp*foreground: white
+tkppp*activeBackground: #406090
+tkppp*activeForeground: white
+tkppp*Frame.background: #204070
+tkppp*Entry.background: #305080
+tkppp*Label.background: #204070
+tkppp*Menu.background: #204070
+tkppp*Menubutton.background: #204070
+tkppp*Menubutton.foreground: white
+tkppp*Text.background: #305080
+tkppp*ipaddr.background: #305080
+tkppp*bitmap.background: #305080
+tkppp*msg.background: #204070
+
+
+Digitize.Window.Geometry: +100+100
+
+
+!Netscape*background: #90b0a8
+!Netscape*troughColor: #588078
+!Netscape*XfeToolbar*highlightColor: black
+!Netscape*blankBackground: #90b0a8
+!Netscape*cellBackground: #90b0a8
+
+! Netscape*defaultBackgroundImage: http://airship/~mwormley/netscape.gif
+! forground color of unfollowed links.
+Netscape*linkForeground:                        #000EE
+! forground color of followed links.
+Netscape*vlinkForeground:                       #551A8B
+! forground color of activated links (links in the process of being clicked.)
+Netscape*alinkForeground:                       #FF0000
+! foreground and background of text selected with the mouse.
+Netscape*selectForeground:                      #00000
+Netscape*selectBackground:                      #FFFFCC
+
+Netscape*documentFonts.latin1.variable*family: new century schoolbook
+Netscape*installColormap: Yes
+
+
+Scrollbar.JumpCursor:	true
+OpenWindows.Beep:	never
+OpenWindows.SetInput:	followmouse
+OpenWindows.ScrollbarPlacement:	right
+OpenWindows.PopupJumpCursor:	true
+OpenWindows.IconLocation:	right
+OpenWindows.SelectDisplaysMenu:	true
+OpenWindows.DragRightDistance:	100
+OpenWindows.MultiClickTimeout:	3
+OpenWindows.WindowColor:	#808080
+OpenWindows.WorkspaceColor:	#4c4c4c
+OpenWindows.MinmalDecor:	xload xbiff xdaliclock
+*basicLocale:	C
+*displayLang:	C
+*inputLang:	C
+*numeric:	C
+*timeFormat:	C
+Arcedit*Geometry: -60-2
+
+xvi*x: 80
+xvi*y: 24
+xvi*bg: black
+xvi*fg: white
+xvi*cursor: mediumspringgreen
+xvi*mouse: blue
+xvi*readonly: '#98fb98'
+!xvi*readonly: '#60a0ff'
+xvi*stripExtensions: "ski str tex"
+xvi*specificFile: ".Xdefaults .xinitrc .ctwmrc .cshrc .alias .exrc .visource"
+xvi*ext.pc: DOT_PC
+xvi*ext.c: DOT_C
+xvi*ext.h: DOT_H
+xvi*ext.cc: DOT_CC
+xvi*ext.cxx: DOT_CXX
+xvi*ext.cpp: DOT_CPP
+xvi*ext.java: DOT_JAVA
+xvi*ext.str: DOT_STR
+xvi*ext.int: DOT_INT
+xvi*ext.geo: DOT_INT
+xvi*ext.ski: DOT_SKI
+xvi*ext.sql: DOT_SQL
+xvi*ext.vm: HTML
+xvi*ext.css: CSS
+xvi*ext.html: HTML
+xvi*ext.shtml: HTML
+xvi*ext.xml: XML
+xvi*ext.php: CODE
+xvi*ext.pl: PERL
+xvi*ext.pm: PERL
+xvi*ext.cgi: PERL
+xvi*ext.tex: DOT_TEX
+
+JAVA*geometry: 120x60
+JAVA*fading: 5
+
+xvi.kvi.y: 60
+xvi.kvi.location: +130+10
+xvi.kvi.pager: /export/home/software/brmiller/bin/mypager
+
+xvi.lvi.y: 60
+xvi.lvi.location: +146+10
+
+xvi.ovi.y: 60
+xvi.ovi.location: +146+10
+xvi.ovi.editor: /export/home/brmiller/src/editor/elvis-2.0/elvis
+
+xvi.rvi.y: 60
+xvi.rvi.location: +146+10
+xvi.rvi.pager: /usr/ucb/vi
+
+xvi.mvi.y: 40
+xvi.mvi.location: +644+10
+
+xvi.svi.y: 24
+xvi.svi.location: +94-65
+
+xvi.tvi.x: 120
+xvi.tvi.y: 60
+xvi.tvi.editor: elvis
+xvi.tvi.location: +136+10
+
+xvi.evi.x: 80
+xvi.evi.y: 60
+xvi.evi.editor: elvis
+xvi.evi.location: +136+10
+
+xvi.xl.y: 60
+xvi.xl.location: +130+10
+xvi.xl.pager: less
+xvi.xl.editor: less
+
+xvi..Xdefaults.y: 40
+xvi..Xdefaults.location: -108+20
+xvi..Xdefaults.bg: royalblue4
+xvi..Xdefaults.fg: white
+xvi..Xdefaults.cursor: white
+xvi..Xdefaults.mouse: blue
+
+xvi..xinitrc.y: 20
+xvi..xinitrc.location: -128+40
+xvi..xinitrc.bg: royalblue4
+xvi..xinitrc.fg: white
+xvi..xinitrc.cursor: white
+xvi..xinitrc.mouse: blue
+
+xvi..ctwmrc.y: 30
+xvi..ctwmrc.location: -148+60
+xvi..ctwmrc.bg: royalblue4
+xvi..ctwmrc.fg: white
+xvi..ctwmrc.cursor: white
+xvi..ctwmrc.mouse: blue
+
+xvi..xdockrc.y: 20
+xvi..xdockrc.location: -168+80
+xvi..xdockrc.bg: royalblue4
+xvi..xdockrc.fg: white
+xvi..xdockrc.cursor: white
+xvi..xdockrc.mouse: blue
+
+xvi..cshrc.y: 40
+xvi..cshrc.location: -188+100
+xvi..cshrc.bg: royalblue4
+xvi..cshrc.fg: white
+xvi..cshrc.cursor: white
+xvi..cshrc.mouse: blue
+
+xvi..alias.y: 40
+xvi..alias.location: -188+100
+xvi..alias.bg: royalblue4
+xvi..alias.fg: white
+xvi..alias.cursor: white
+xvi..alias.mouse: blue
+
+xvi..exrc.y: 20
+xvi..exrc.location: -208+120
+xvi..exrc.bg: royalblue4
+xvi..exrc.fg: white
+xvi..exrc.cursor: white
+xvi..exrc.mouse: blue
+
+xvi..muttrc.y: 20
+xvi..muttrc.location: -228+140
+xvi..muttrc.bg: royalblue4
+xvi..muttrc.fg: white
+xvi..muttrc.cursor: white
+xvi..muttrc.mouse: blue
+
+xvi..rules.y: 20
+xvi..rules.location: -228+140
+xvi..rules.bg: royalblue4
+xvi..rules.fg: white
+xvi..rules.cursor: white
+xvi..rules.mouse: blue
+
+xvi..visource.y: 20
+xvi..visource.location: -208+120
+xvi..visource.bg: royalblue4
+xvi..visource.fg: white
+xvi..visource.cursor: white
+xvi..visource.mouse: blue
+
+xvi..timevi.x: 80
+xvi..timevi.y: 30
+xvi..timevi.location: -535+30
+xvi..timevi.bg: darkslategray
+xvi..timevi.fg: white
+xvi..timevi.cursor: white
+xvi..timevi.mouse: red
+
+xvi..gusvi.y: 25
+xvi..gusvi.location: -128+10
+xvi..gusvi.bg: #47258
+xvi..gusvi.fg: white
+xvi..gusvi.cursor: white
+xvi..gusvi.mouse: blue
+
+xclock.wm_option.title:	off
+xload.wm_option.title:	off
+xloadtime.wm_option.title:	off
+
+Fig*customization: -color
