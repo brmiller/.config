@@ -76,9 +76,9 @@
 *color7:                S_base2
 *color15:               S_base3
 
-
-
 Xft.dpi: 96
+
+
 
 Netscape*documentFonts.sizeIncrement: 5
 
@@ -158,8 +158,7 @@ URxvt*scrollBar_right: true
 URxvt*saveLines: 4000
 URxvt*path: /export/home/brmiller/stuff/pixmaps
 ! fixed is 6x13
-!URxvt*font: fixed
-URxvt*font: xft:LiberationMono:size=12
+URxvt*font: fixed
 URxvt*font1: 5x8
 ! 6x10 has problems
 URxvt*font2: 6x9
@@ -168,8 +167,7 @@ URxvt*font4: 10x20
 !URxvt*bigfont_key: F12
 !URxvt*smallfont_key: F11
 URxvt*meta8: false
-URxvt.perl-lib: /home/brmiller/.urxvt-perls
-URxvt.perl-ext-common: default,url-select,keyboard-select,clipboard
+URxvt.perl-ext-common: default,url-select,keyboard-select,clipboard,resize-font
 !URxvt.clipboard.copycmd: xsel -ip
 !URxvt.clipboard.pastecmd: xsel -op
 URxvt.clipboard.autocopy: true           
@@ -180,6 +178,10 @@ URxvt.keysym.M-Escape: perl:keyboard-select:activate
 URxvt.keysym.M-c:      perl:clipboard:copy
 URxvt.keysym.M-p:      perl:clipboard:paste
 URxvt.keysym.M-C-v:    perl:clipboard:paste_escaped
+URxvt.resize-font.smaller: C-minus
+URxvt.resize-font.bigger: C-plus
+URxvt.resize-font.reset: C-equal
+URxvt.resize-font.show: C-question
 !URxvt.url-select.underline: true
 !URxvt.url-select.launcher: chromium-browser
 
