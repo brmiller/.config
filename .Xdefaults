@@ -158,7 +158,8 @@ URxvt*scrollBar_right: true
 URxvt*saveLines: 4000
 URxvt*path: /export/home/brmiller/stuff/pixmaps
 ! fixed is 6x13
-URxvt*font: fixed
+!URxvt*font: fixed
+URxvt*font: xft:LiberationMono:size=10
 URxvt*font1: 5x8
 ! 6x10 has problems
 URxvt*font2: 6x9
